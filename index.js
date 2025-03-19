@@ -15,7 +15,7 @@ let bot = null; // Initialize the bot as null
 app.use(express.static(path.join(__dirname, '')));
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'main.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 io.on('connection', function(socket) {
